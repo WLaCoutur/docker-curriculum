@@ -9,7 +9,7 @@ The application directory does contain a Dockerfile but since we're doing this f
 We start with specifying our base image. Use the `FROM` keyword to do that -
 
 ```dockerfile
-FROM python:3.8
+FROM python:3.14.3
 ```
 
 The next step usually is to write the commands of copying the files and installing the dependencies. First, we set a working directory and then copy all the files for our app.
@@ -44,7 +44,7 @@ CMD ["python", "./app.py"]
 The primary purpose of `CMD` is to tell the container which command it should run when it is started. With that, our `Dockerfile` is now ready. This is how it looks -
 
 ```dockerfile
-FROM python:3.8
+FROM python:3.14.3
 
 # set a directory for the app
 WORKDIR /usr/src/app
